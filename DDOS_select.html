@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title> DDOS Learning </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-color: #454955;
+            }
+            /* Basic Elements */
+                h1{ 
+                    color: #E3E2DF;
+                    font-size: 450%;
+                    text-align: center;
+                    font-family: Georgia;
+                    margin-bottom: 1%;
+                }
+                h2{
+                    font-size: 250%;
+                    color: #E3E2DF;
+                    text-decoration: underline;
+                }
+                p{
+                    color: #E3E2DF;
+                    font-size: 175%;
+                    text-indent: 8%;
+                    margin-bottom: -1%;
+                }
+                hr{
+                    width: 40%;
+                    color: #1F2833;
+                    margin-top: -0.9%;
+                }
+                ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    background-color: #F3EFF5;
+                }
+
+            /* Navigation Bar Elements */
+                li a {
+                    display: block;
+                    color: #000;
+                    font-size: large;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                }
+                li a.active {
+                    background-color: #1F2833;
+                    color: #F3EFF5;
+                }
+                li a:hover:not(.active) {
+                    background-color: #454955;
+                    color: #F3EFF5;
+                }
+            /* Button(s) */
+            .btn {
+                border: none;
+                background-color: inherit;
+                padding: 14px 28px;
+                font-size: 40px;
+                cursor: pointer;
+                display: inline-block;
+            }
+            /* Blue */
+            .info {
+                color: dodgerblue;
+            }
+            .info:hover,
+                .info:focus{
+                    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                    transform: translateY(-0.70em);
+                    background: #2196F3;
+                    color: white;
+                }
+
+            /* ICMP Flood */
+            .warning {
+                color: orange;
+            }
+            .warning:hover,
+                .warning:focus{
+                    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                    transform: translateY(-0.70em);
+                    background: #ff9800;
+                    color: white;
+                }
+
+            /* UDP Flood */
+            .danger {
+                color: red;
+            }
+            .danger:hover,
+                .danger:focus{
+                background: #f44336;
+                color: white;
+                box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                transform: translateY(-0.70em);
+            }
+
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 200px;
+                border: 3px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <h1> DDOS Learning </h1>
+        <hr>
+
+        <br>
+        <ul>
+          <li><a class="active" href="Welcome.html"> Home </a></li>
+          <li><a href="DDOS.html"> DDOS </a></li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+
+        <br><br><br><br><br><br><br><br><br><br>
+        
+        <!-- DDOS Attack Button(s) -->
+        <div class="center">
+            <div class="btn button2a">
+                <a href="UDP_Flood.html">
+                    <button class="btn danger">UDP Flood</button>
+                </a>
+            </div>
+            <!-- DDOS Attack Button -->
+            <div class="btn button3a">
+                <a href="ICMP_Flood.html">
+                    <button class="btn warning">ICMP (Ping) Flood</button>
+                </a>
+            </div>
+            <!-- DDOS Attack Button -->
+            <div class="btn button4a">
+                <a href="SYN_Flood.html">
+                    <button class="btn info">SYN Flood </button>
+                </a>
+            </div>
+        </div>
+
+    </body>
+</html>
+
