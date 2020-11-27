@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <title> About Us </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                background-color: #454955;
+            }
+            /* Flip Card Elements */
+            .flip-card {
+                background-color: transparent;
+                width: 410.5px;
+                height: 510.5px;
+                perspective: 100000px;
+            }
+                .flip-card-inner {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 0.6s;
+                    transform-style: preserve-3d;
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                }
+                .flip-card:hover .flip-card-inner {
+                    transform: rotateY(180deg);
+                }
+                .flip-card-front, .flip-card-back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                }
+                .flip-card-front {
+                    background-color: #bbb;
+                    color: black;
+                }
+                .flip-card-back {
+                    background-color: #454955;
+                    color: white;
+                    transform: rotateY(180deg);
+                }
+                /* Mohammed's Card Flip Elements */
+                .flip-cardMo {
+                    background-color: transparent;
+                    width: 610.5px;
+                    height: 410.5px;
+                    perspective: 10000px;
+                }
+                .flip-cardMo:hover .flip-card-inner {
+                    transform: rotateY(180deg);
+                }
+            /* Regular Elements */
+            h1 { 
+                color: #E3E2DF;
+                font-size: 400%;
+                font-family: Georgia;
+                text-align: center;
+
+            }
+
+            .row {
+                display: flex;
+            }
+            
+            .column {
+            flex: 33.33%;
+            padding: 5px;
+            }     
+
+            p { 
+                font-family: Georgia;
+                font-size: 120%;
+                color: #E3E2DF;
+                
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                background-color: #F3EFF5;
+            }
+            /* List elements*/
+            li a {
+                display: block;
+                color: #000;
+                font-size: large;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+                li a.active {
+                    background-color: #1F2833;
+                    color: #F3EFF5;
+                }
+                li a:hover:not(.active) {
+                    background-color: #454955;
+                    color: #F3EFF5;
+                }
+       
+        </style>
+    </head>
+    <body>
+
+        <h1>About Us</h1>
+        
+        <ul>
+          <li><a class="active" href="Welcome.html"> Home </a></li>
+          <li><a href="DDOS.html"> DDOS </a></li>
+          <li><a href="About.html">About Us </a></li>
+        </ul>
+
+        <br></br>
+
+        <!-- Mohammed -->
+        <div class="row">
+            <div class="column">
+                <div class="flip-cardMo">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                            <img src="https://lh3.googleusercontent.com/4T5ft51zwPLi1JFtRxRj4aMaUcz6YDtWyQOYo1om-kuF_O3LF9u91xonC2MVBEUMdYH0G7qYIo0C2f65sjgSjnf4l_kpXRXI8aB_ZVIg-MpHQhiUMWe4N5qUVc6dGtyvXGSbo9xxrQ=w2400"
+                            width="600px" height="400px"
+                            style="border:5px solid black"/>
+                      </div>
+                      <div class="flip-card-back">
+                            <h2 style="margin-top: 25%;">Name: <b>Mohammed Osman</b></h2>
+                            <h2>Grade: <b>Junior</b></h2>
+                            <h2>Major: <b>Cyber Security</b></h2>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+
+            <!-- Jennifer -->
+            <div class="column">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                            <img src="https://lh3.googleusercontent.com/3QoXMkCV07n23iAkhfbHOs0ROZqsAjnd8-DbmRfimapDxvqvgg9Lu_7lq_xlfHmPejaIuiMgZNFJZyntC7CHHwL8vWFNbbHLtInc9s0XI9kg68KiRfLvrfu8hCHSmiujxIYwYZN35Q=w2400"
+                            width="400px" height="500px"
+                            style="border:5px solid black"/>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2 style="margin-top: 45%;">Name: <b>Jennifer Tenholder</b></h2>
+                            <h2>Grade: <b>Junior</b></h2>
+                            <h2>Major: <b>Cyber Security</b></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Jomari -->
+            <div class="column">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                            <img src= "https://lh3.googleusercontent.com/bT4gZvEiIO4Ps3CRrzfmBHUxxkpABbJtwyqrGs21xSh0O9swafTnz5JNtWDG4NIiign66HSl_LOLGiK0ckNh3GWXVqbRNCuNT05XKpsEfaqgoJaBizh-F_3xtXYovzzvvfYX1CJJqQ=w2400"
+                            width="400px" height="500px"
+                            style="border:5px solid black">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2 style="margin-top: 45%;">Name: <b>Jomari Gee</b></h2>
+                            <h2>Grade: <b>Sophomore</b></h2>
+                            <h2>Major: <b>Cyber Security</b></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alyssa -->
+            <div class="row">
+                <div class="column">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src= "https://lh3.googleusercontent.com/dTDFAuRMwxfS2VgLNCfQFzRC34fES_M-olAHU6InsX5d_kYV6kBVcnQEzJgdhIqMn-dHzaUYezH0wdWNygyzvxkfxmZWY5ox26Y1NK7tQSNEhkQiDlaTKP-lXjUGURsvDg-RmCAYLQ=w2400"
+                             width="400" height="500"
+                             style="border:5px solid black"/>
+                          </div>
+                          <div class="flip-card-back">
+                             <h2 style="margin-top: 45%;">Name: <b>Alyssa Klocke</b></h2>
+                             <h2>Grade: <b>Junior</b></h2>
+                             <h2>Major: <b>Cyber Security</b></h2>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <!-- Kajal -->
+            <div class="row">
+                <div class="column">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src= "https://lh3.googleusercontent.com/BvV19N5Nqd67aAU22GV__r1D4QTzzctPfTc46CbLqS3CKE8DJJwhAhjw0TsCkYQVVTLiHk1etwPeTjageiJP5ngiGyTNtIX4m3A79sQey_9n2DQHI0C8YQQuGOSlzs-d3OTevHUD7w=w2400"
+                               width="400" height="500"
+                               style="border:5px solid black"/>
+                          </div>
+                          <div class="flip-card-back">
+                            <h2 style="margin-top: 45%;">Name: <b>Kajal Puri</b></h2>
+                            <h2>Grade: <b>Junior</b></h2>
+                            <h2>Major: <b>Cyber Security</b></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
