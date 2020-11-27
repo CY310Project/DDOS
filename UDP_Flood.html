@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title> UDP Flood </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                background-color: #454955;
+            }
+            /* Basic Elements */
+                h1{ 
+                    color: #E3E2DF;
+                    font-size: 450%;
+                    text-align: center;
+                    font-family: Georgia;
+                    margin-bottom: 1%;
+                }
+                h2{
+                    font-size: 250%;
+                    color: #E3E2DF;
+                    text-decoration: underline;
+                }
+                p{
+                    color: #E3E2DF;
+                    font-size: 175%;
+                    text-indent: 8%;
+                    margin-bottom: -1%;
+                    line-height: 56px;
+                }
+                a{
+                    color: #E3E2DF;
+
+                }
+                a:link{
+                    text-decoration: none;
+                }
+                a:visited{
+                    text-decoration: none;
+                }
+                a:hover{
+                    text-decoration: none;
+                }
+                a:active{
+                    text-decoration: none;
+                }
+                hr{
+                    width: 40%;
+                    color: #1F2833;
+                    margin-top: -0.9%;
+                }
+                ul{
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 200px;
+                    background-color: #F3EFF5;
+                }
+
+            /* Navigation Bar Elements */
+                li a {
+                    display: block;
+                    color: #000;
+                    font-size: large;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                }
+                li a.active {
+                    background-color: #1F2833;
+                    color: #F3EFF5;
+                }
+                li a:hover:not(.active) {
+                    background-color: #454955;
+                    color: #F3EFF5;
+                }
+            /* Button(s) */
+            .btn {
+                border: none;
+                background-color: inherit;
+                font-size: 16px;
+                cursor: pointer;
+                display: inline-block;
+                width: 1000px;
+                margin-bottom: 10px ;
+            }
+                /* Main */
+
+                .main:hover {
+                    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                    transform: translateY(-0.70em);
+                    background: #f44336;
+                    color: black;
+                }
+                .center {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 200px;
+                    border: 3px;
+                }
+            /* Front and Back Button */
+            .previous {
+                background-color: black;
+                color: #f1f1f1;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 150px;
+            }
+                .previous:hover{
+                    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                        transform: translateY(-0.70em);
+                }
+            .next {
+                background-color: #f44336;
+                color: black;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 150px;
+                margin-left: 70px;
+            }
+                .next:hover{
+                    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+                        transform: translateY(-0.70em);
+                }
+            .round {
+                border-radius: 50%;
+            }            
+
+        </style>
+    </head>
+    <body>
+
+        <h1> UDP Flood </h1>
+        <hr>
+
+        <br>
+        <ul>
+          <li><a class="active" href="Welcome.html"> Home </a></li>
+          <li><a href="DDOS.html"> DDOS </a></li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+
+        <br><br><br><br><br><br><br>
+
+        <!-- DDOS Description--> 
+        <div class="center">
+            <button class="btn main">
+                <a href="UDP1.html">
+                    <p>
+                        <strong>UDP 
+                        </strong> 
+                        stands for User Datagram Protocol. Its a communication protocol mostly used for low-latency connections between applications on the internet. Data sent across the internet 
+                        are called packets. These packets are sent to the targeted server with the goal to overwhelm the device's capability to process them and respond. Click here to keep learning!
+                        <div class="hidden"></div>
+                    </p>
+                </a>
+            </button>
+        </div>
+
+
+        <div class="center">
+                <a href="DDOS.html" class="previous round">&#8249;</a>
+                <a href="UDP1.html" class="next round">&#8250;</a>
+        </div>
+
+
+    </body>
+</html>
+
